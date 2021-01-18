@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;  
+}
+
+body {
+  font-family: "Lucida Sans", Arial, Verdana, sans-serif;
+  font-size: 120%;
+  --hauptfarbe-1-color: #fffff5;/*Hintergrund, Schrift hell*/
+  --hauptfarbe-2-color: #332200; /*Rand*//*Schrift dunkel*/  
+  --hauptfarbe-3-color: #332200; 
+  min-width: 250px;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.flexrow {  
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: stretch;
+  align-content: stretch;
+  width: 100%;
+  min-width: 600px;
+  max-width: 1200px;
+  border: 5px solid blue;
+  margin: auto;
+}
+
+.flexitem {
+  border: 5px solid red;
+  flex-basis: auto;
+  height: 100px;
+  flex: auto;
+}
+
+.smallitem {  
+  flex: 3 auto;
+}
+
+.bigitem {  
+  flex: 4 auto;
+}
+
+.wholerowitem {
+  width: 100%;
+}

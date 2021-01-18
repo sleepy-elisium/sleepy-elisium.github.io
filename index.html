@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+ <link rel="stylesheet" href="style.css">  
+ <!-- Menuicon-->
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta charset="UTF-8">
+ <meta name="description" content="XXX">
+ <meta name="keywords" content="XXX">
+ <meta name="author" content="Elisa Zollmann"> 
+
+ <title>Test</title>
+</head>
+
+<body>
+
+    <div class="flexrow">
+
+        <div class="flexitem wholerowitem">
+            0
+        </div>
+
+        <div class="flexitem smallitem">
+        1
+        </div>
+
+        <div class="flexitem bigitem">
+        2
+        </div>
+
+        <div class="flexitem bigitem">
+        3
+        </div>
+
+        <div class="flexitem smallitem">
+        4
+        </div>
+
+    </div>
+
+
+
+    <input placeholder="type into me!" class="input-to-copy"/>
+    <p class="p-to-copy-to">noch nichts passiert</p>
+
+    <script>
+        let input = document.querySelector('.input-to-copy');
+        const paragraph = document.querySelector('.p-to-copy-to');
+
+        input.addEventListener("change", function (){
+            paragraph.innerText = input.value;
+        });
+    </script>
+
+      <div class="color-box"></div>
+
+    <input type="color" class="color-input"/>
+
+
+
+
+    <script src="./test.js"></script>
+
+    <script>
+        const input = document.querySelector(".color-input");
+        const farbbox = document.querySelector(".flexrow");
+        input.addEventListener("change", function(){
+            farbbox.style.backgroundColor = input.value;
+        });
+    </script>
+
+
+
+</body>
+</html>
